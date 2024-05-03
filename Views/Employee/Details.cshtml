@@ -1,0 +1,19 @@
+﻿@model WebApp3BySijan.Models.Employee
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Employee Detail</h1>
+
+<div>
+    <h4>Employee ID :  @Model.ID</h4>
+    <h4>Employee Name :  @Model.Name</h4>
+    <h4>Address :  @Model.Address</h4>
+    <h4>Phone Number :  @Model.Phone</h4>
+
+</div>
+<div>
+    @Html.ActionLink("Edit", "Edit", new { /* id = Model.PrimaryKey */ }) |
+    <a asp-action="Index">Back to List</a>
+</div>
